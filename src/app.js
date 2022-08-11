@@ -501,3 +501,4 @@ function getCurrentDate(currentTime) {
   currentLocation.addEventListener("click", getPosition);
   
   callWeatherApi("Budapest");
+

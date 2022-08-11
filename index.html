@@ -17,22 +17,29 @@
     <title>Veronika Nagy| Weather App</title>
   </head>
       <body>
-        <div class="container">
+        <div class="container py-5 h-100">
+        <div class="weather-app-wrapper">
+            <div class="weather-app custom-gradient" style="border-radius: 25px">
+                <form id="search-form" class="mb-3">
           <div class="row">
-            <div class="col-lg-7 section">
+            <div class="col-sm-7 section">
               <div class="row">
                 <div class="col-sm-4 order-sm-2">
                   <button
                     class="btn btn-outline-primary current-location-button"
                     id="current-location-button"
                   >
-                    Current location
+                  <img
+                  src="src/icons8-place-marker-40.png"
+                  alt="place-marker"
+                  style="height: 78px; width: 85px" 
+                />
                   </button>
                 </div>
-                <div class="col-sm-8 order-sm-1">
+                <div class="col-sm-7 order-sm-1">
                   <div class="card search-engine">
                     <div class="card-body">
-                      <form id="search-form">
+                      <form id="search-form" class="mb-3">
                         <div class="row align-items-center">
                           <div class="col-xxl-9 col-8">
                             <div class="form-floating mb-3 searchbar">
@@ -50,7 +57,8 @@
                             <input
                               type="submit"
                               class="btn btn-outline-success search-button"
-                              value="Search"
+                              value="🔎"
+                              style="height: 58px; width: 60px"
                             />
                           </div>
                         </div>
@@ -59,7 +67,6 @@
                   </div>
                 </div>
               </div>
-    
               <div class="row">
                 <div
                   class="
@@ -86,7 +93,6 @@
                     <div class="weather" id="weather"></div>
                   </div>
                 </div>
-    
                 <div
                   class="
                     col-md-8 col-lg-12 col-xl-8
@@ -161,13 +167,14 @@
                 ><span id="refresh-time"></span>
               </div>
     
-              <hr />
+              <hr class="dots"/>
     
               <div id="forecast"></div>
             </div>
           </div>
           <div class="row">
             <div class="col-lg-7">
+
               <footer>
                 <a
                   href="https://github.com/Vero55/Weather-App"
@@ -177,7 +184,9 @@
                 >
                 by Vero Nagy
               </footer>
+             </div>
             </div>
+           </div>
           </div>
         </div>
         <script src="src/app.js"></script>

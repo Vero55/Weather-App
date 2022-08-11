@@ -16,12 +16,12 @@ body {
   h1,
   h2 {
     font-weight: 700;
-    color: #f7be7f;
+    color: rgb(47, 153, 206);
   }
   
   h1 {
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 35px;
     max-width: 100%;
   }
   
@@ -29,17 +29,20 @@ body {
     margin-bottom: 10px;
     font-size: 30px;
   }
-  
-  hr {
-    opacity: 1;
-    border: none;
-    border-top: 5px solid #4ed99c;
-    border-radius: 4px;
-    margin: 0;
+
+  .dots {
+    color: orange;
+    color: color;
+    height: 8px;
+    border-width: 0 0 8px;
+    border-style: solid;
+    border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="#{$color}" cx="1" cy="0.5" r="0.5"/></svg>') 0 0 100% repeat;
   }
   
+  
+  
   footer {
-    text-align: right;
+    text-align: center;
     font-size: 14px;
     margin-top: 5px;
   }
@@ -52,16 +55,17 @@ body {
   
   .section {
     padding: 12px;
-    border: 2px solid #4ed99c;
-    border-radius: 4px;
+    border: 2px solid #08b9ef;
+    border-radius: 8px;
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
-    background-color: #17706e;
+    background: rgb(34,140,195);
+    background: linear-gradient(0deg, rgba(34,140,195,1) 0%, rgba(253,187,45,1) 100%);
   }
   
   .search-engine {
     margin-bottom: 20px;
-    background-color: #17706e;
-    border: 1px solid rgba(78, 217, 156, 1);
+    background: rgb(34,140,195);
+    background: linear-gradient(0deg, rgba(34,140,195,1) 0%, rgba(253,187,45,1) 100%);
   }
   
   .searchbar {
@@ -69,22 +73,22 @@ body {
   }
   
   .searchbar-type {
-    border-color: #4ed99c;
+    border-color: #08b9ef;
   }
   
   .search-button {
     font-weight: 700;
     font-size: 20px;
     background-color: #fff;
-    border-color: #4ed99c;
-    color: #4ed99c;
+    border-color: #08b9ef;
+    color: #08b9ef;
     max-width: 110%;
     float: right;
   }
   
   .search-button:hover {
-    background-color: #4ed99c;
-    border-color: #4ed99c;
+    background-color: #08b9ef;
+    border-color: #08b9ef;
   }
   
   .search-button:focus {
@@ -95,12 +99,11 @@ body {
   .current-location-button {
     display: block;
     margin-right: 15px;
-    margin-top: 10px;
     margin-bottom: 25px;
     float: right;
     font-weight: 700;
     color: #fb3569;
-    background-color: #fff;
+    background-color: none;
     border-color: #fb3569;
   }
   
@@ -121,24 +124,27 @@ body {
   }
   
   .temp-current {
+    margin-top: -18px;
     text-align: right;
     font-size: 90px;
     font-weight: 700;
-    color: #f7be7f;
+    color: #d8e3ea;
+
   }
   
   .temp-current-maxmin {
     text-align: right;
-    color: #f7be7f;
-    font-size: 20px;
+    color: #daa76e;
+    font-size: 22px;
   }
   
   .temp-unit-change {
-    margin-top: 20px;
+    margin-top: 13px;
     padding-left: 0;
   }
   
   .temp-unit {
+    margin-top: -8px;
     padding: 0;
     border: none;
     font-weight: 700;
@@ -172,7 +178,7 @@ body {
   }
   
   .extra-info {
-    margin-top: 10px;
+    margin-top: 7px;
     margin-bottom: 10px;
     padding-left: 40px;
     padding-top: 15px;
@@ -214,7 +220,7 @@ body {
   
   .refresh-time {
     text-align: right;
-    color: #f7be7f;
+    color: #daa76e;
     font-size: 13px;
     margin-right: 15px;
     margin-bottom: 5px;
@@ -257,8 +263,8 @@ body {
   }
   
   .temp-forecast {
-    color: #f7be7f;
-    font-size: 13px;
+    color: #daa76e;
+    font-size: 18px;
     margin-bottom: 5px;
   }
   
