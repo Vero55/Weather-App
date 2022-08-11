@@ -94,7 +94,8 @@ body {
   }
   
   .search-button:hover {
-    background-color: rgb(34,140,195);
+    color: rgb(220, 156, 18);
+    background-color: #3db6d4;
     border-color: rgb(34,140,195);
   }
   
@@ -120,6 +121,8 @@ body {
   .current-location-button:hover {
     border-color: rgb(195, 109, 34);
     border-radius: 45px;
+    color: #3db6d4;
+    background-color: rgb(220, 156, 18);
   }
   
   .current-location-button:focus {
