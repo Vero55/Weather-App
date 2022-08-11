@@ -1,5 +1,7 @@
 body {
     font-family: "Poppins", sans-serif;
+    background: rgb(233,207,141);
+    background: linear-gradient(90deg, rgba(233,207,141,1) 0%, rgba(96,203,232,1) 50%, rgba(205,171,16,1) 100%);
   }
   
   h1,
@@ -16,16 +18,18 @@ body {
   h1,
   h2 {
     font-weight: 700;
-    color: rgb(47, 153, 206);
+    color: rgb(42, 137, 184);
   }
   
   h1 {
+    margin-top: 8px;
     margin-bottom: 0;
-    font-size: 35px;
+    font-size: 38px;
     max-width: 100%;
   }
   
   h2 {
+    margin-top: 15px;
     margin-bottom: 10px;
     font-size: 30px;
   }
@@ -49,6 +53,7 @@ body {
     margin-top: 20px;
     margin-bottom: 17px;
     max-width: 95%;
+    text-align: right;
   }
   
   .section {
@@ -58,13 +63,14 @@ body {
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
     background: rgb(34,140,195);
     background: linear-gradient(0deg, rgba(34,140,195,1) 0%, rgba(253,187,45,1) 100%);
+    border-radius: 45px;
   }
   
   .search-engine {
     margin-bottom: 20px;
     background: rgb(34,140,195);
     background: linear-gradient(0deg, rgba(34,140,195,1) 0%, rgba(253,187,45,1) 100%);
-    border-radius: 40px;
+    border-radius: 45px;
   }
   
   .searchbar {
@@ -73,7 +79,7 @@ body {
   
   .searchbar-type {
     border-color: #10b8eb;
-    border-radius: 40px;
+    border-radius: 45px;
   }
   
   .search-button {
@@ -84,7 +90,7 @@ body {
     color: rgb(34,140,195);
     max-width: 110%;
     float: right;
-    border-radius: 40px;
+    border-radius: 45px;
   }
   
   .search-button:hover {
@@ -106,12 +112,13 @@ body {
     color: rgba(253,187,45,1);
     background-color: none;
     border-color: transparent;
+    border-radius: 40px;
   }
   
   .current-location-button:hover {
     background-color: rgb(34,140,195);
     border-color: rgb(34,140,195);
-    border-radius: 40px;
+    border-radius: 45px;
   }
   
   .current-location-button:focus {
@@ -128,7 +135,7 @@ body {
   .temp-current {
     margin-top: -18px;
     text-align: right;
-    font-size: 90px;
+    font-size: 110px;
     font-weight: 700;
     color: #d8e3ea;
 
@@ -142,15 +149,17 @@ body {
   
   .temp-unit-change {
     margin-top: 13px;
-    padding-left: 0;
+    text-align: center;
   }
   
   .temp-unit {
+    text-align: center;
     margin-top: -8px;
+    margin-left: -13px;
     padding: 0;
     border: none;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 45px;
   }
   
   .temp-unit:hover {
@@ -170,19 +179,9 @@ body {
     color: #783444;
   }
   
-  .vr {
-    display: inline;
-    opacity: 1;
-    background-color: #4ed99c;
-    border-radius: 4px;
-    margin: 0 3px 0 4px;
-    padding: 7px 2px 7px 1px;
-  }
-  
   .extra-info {
     margin-top: 7px;
     margin-bottom: 10px;
-    padding-left: 40px;
     padding-top: 15px;
     font-style: italic;
     font-weight: 600;
@@ -194,6 +193,7 @@ body {
   .wind-value {
     font-style: normal;
     font-weight: 400;
+    text-align: right;
   }
   
   .current-info {
@@ -237,12 +237,12 @@ body {
   }
   
   .forecast-days {
-    border-radius: 10px;
+    border-radius: 35px;
     transition: all 200ms ease-in-out;
   }
   
   .forecast-days:hover {
-    background-color: rgba(78, 217, 156, 0.5);
+    background-color: rgba(217, 182, 78, 0.5);
   }
   
   .day-forecast {

@@ -39,6 +39,7 @@
                 <div class="col-sm-7 order-sm-1">
                   <div class="card search-engine">
                     <div class="card-body">
+                        
                       <form id="search-form" class="mb-3">
                         <div class="row align-items-center">
                           <div class="col-xxl-9 col-8">
@@ -53,13 +54,21 @@
                               <label for="floatingInput">Enter a city...</label>
                             </div>
                           </div>
-                          <div class="col-xxl-3 col-4">
+                         <div class="col-xxl-3 col-4">
                             <input
                               type="submit"
                               class="btn btn-outline-success search-button"
                               value="🔎"
                               style="height: 58px; width: 60px"
                             />
+                          </div>
+                          <div class="col-xxl-3 col-4">
+                            <button
+                    class="btn btn-outline-primary current-location-button"
+                    id="current-location-button"
+                    value="Your Location"
+                    style="height: 58px; width: 60px; background-color: white;"
+                    >YOU</button>
                           </div>
                         </div>
                       </form>
@@ -180,9 +189,11 @@
                   href="https://github.com/Vero55/Weather-App"
                   target="_blank"
                   class="source-code-link"
+                  style="font-size: 20px;"
                   >Open-source code</a
                 >
-                by Vero Nagy
+                <span style="color: white; font-size: 20px;">by Vero Nagy</span>
+                
               </footer>
              </div>
             </div>
