@@ -500,5 +500,10 @@ function getCurrentDate(currentTime) {
   let currentLocation = document.querySelector("#current-location-button");
   currentLocation.addEventListener("click", getPosition);
   
-  callWeatherApi("Budapest");
+  callWeatherApi()
+  {
+    navigator.geolocation.getCurrentPosition(retrievePosition);
+  }
+  ;
+
 
